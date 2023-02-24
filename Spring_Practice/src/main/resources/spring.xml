@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="Triangle" class="com.knoldus.Triangle" autowire="constructor">
+<!--        <property name="type" value="Equilateral"/>-->
+<!--        <constructor-arg  value="Scalene"/>-->
+<!--        <property name="point1" ref="Point1"/>-->
+<!--        <property name="point2" ref="Point2"/>-->
+<!--        <property name="point3" ref="Point3"/>-->
+    </bean>
+
+    <bean id = "point1" class="com.knoldus.Point">
+        <constructor-arg value="10"/>
+        <constructor-arg value="20"/>
+        <!--        <property name="x" value="10"/>-->
+<!--        <property name="y" value="20"/>-->
+    </bean>
+<!--    <bean id = "point2" class="com.knoldus.Point">-->
+<!--        <property name="x" value="30"/>-->
+<!--        <property name="y" value="40"/>-->
+<!--    </bean>-->
+
+<!--    <bean id = "point3" class="com.knoldus.Point">-->
+<!--        <property name="x" value="60"/>-->
+<!--        <property name="y" value="70"/>-->
+<!--    </bean>-->
+
+</beans>

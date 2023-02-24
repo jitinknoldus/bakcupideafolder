@@ -1,0 +1,4 @@
+/.idea
+*.iml
+/modify-strings/string-api/target/
+/modify-strings/string-impl/target/
