@@ -1,0 +1,17 @@
+Answer 4 : TWO
+
+Answer 5 : Duplicated. Because var args (int ... a) are nothing but the arrays. So here, (int ... a) and (int[] a) are the same.
+
+Answer 6 : throw java.lang.StackOverflowError at run time. Because, overloadedMethod(int)
+           keeps calling itself.
+           Error: thread "main" java.lang.StackOverflowError
+
+Answer 7 : Compilation Error Because in java we cannot assign parent class reference object to the child class.
+
+Answer 8 : Geek. Java Abstract class can implement interfaces without even providing the implementation of interface methods. Here obj is the Gaurav class object so the method getInfo is called of the Gaurav class.
+
+Answer 9 : Instance method ‘void show ’ in ‘child’ cannot override a static parent class method. It is beyond the concept of oops.
+
+Answer 10 : Non static member “X” cannot be referenced from static context.
+
+Answer 11 : O,C,A will be the sequence of the output.

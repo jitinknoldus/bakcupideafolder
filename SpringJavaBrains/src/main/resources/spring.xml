@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!--Method1: Constructor Injection-->
+<!--<beans>-->
+<!--<bean id="triangle" class="com.spring.javabrains.Triangle">-->
+<!--    <constructor-arg type="java.lang.String" value="Scalene"/>-->
+<!--    <constructor-arg type="int" value="10"/>-->
+<!--</bean>-->
+<!--</beans>-->
+
+
+<!--Method2: Object Injection-->
+<!--<beans>-->
+<!--    <bean id="triangle" class="com.spring.javabrains.Triangle">-->
+<!--&lt;!&ndash;        name = "object name"  ref = "bean (object created in xml file)"&ndash;&gt;-->
+<!--        <property name="pointOne" ref="pointA"/>-->
+<!--        <property name="pointTwo" ref="pointB"/>-->
+<!--        <property name="pointThree" ref="pointC"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="pointA" class="com.spring.javabrains.Point">-->
+<!--        <property name="x" value="10"></property>-->
+<!--        <property name="y" value="20"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="pointB" class="com.spring.javabrains.Point">-->
+<!--        <property name="x" value="30"></property>-->
+<!--        <property name="y" value="40"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="pointC" class="com.spring.javabrains.Point">-->
+<!--        <property name="x" value="50"></property>-->
+<!--        <property name="y" value="60"></property>-->
+<!--    </bean>-->
+
+<!--</beans>-->
+
+
+
+<!--Learning Annotations-->
+<beans>
+    <bean id="triangle" class="com.spring.javabrains.Triangle">
+        <property name="circle" ref="circleOne"/>
+    </bean>
+
+    <bean id="circleOne" class="com.spring.javabrains.Circle">
+        <property name="radius"  value="10"/>
+
+    </bean>
+</beans>
